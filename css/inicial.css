@@ -1,0 +1,112 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 10vh;
+}
+.barra {
+  height: 2px;
+  background-color: gray;
+  border: none;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+.text{
+  text-align: left;
+  max-width: 500px;
+  margin-left: 70px;
+  font-size: 1.2rem;
+  margin-top: 100px;  /* distância da navbar */
+  color: gray;
+  font-weight: bold;
+  font-family: 'JetBrains Mono';
+}
+.circulo {
+  width: 230px;
+  height: 230px;
+  background-color: rgb(1, 1, 105);
+  border-radius: 10%;  /* Se quiser círculo perfeito, pode usar 50% */
+  margin-left: auto;    
+  margin-right: 70px;   
+  margin-top: -180px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 3px rgb(255, 255, 255);
+}
+
+.texto {
+  color: gray; /* cinza normal */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.0rem;
+  line-height: 1.5;
+}
+.texto hr{
+  border: none;
+  border-top: 1px solid #aaa;
+  width: 130px;
+  margin: 2px auto 5px auto;
+}
+
+.titulo-texto {
+  color: gray; 
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.circulo2 {
+  width: 230px;
+  height: 230px;
+  background-color: rgb(1, 1, 105);
+  border-radius: 10%;  /* pode ajustar para 50% se quiser círculo perfeito */
+  margin-left: auto;    
+  margin-right: 320px;   
+  margin-top: -230px;
+
+  display: flex;
+  flex-direction: column;       /* agora empilha verticalmente */
+  justify-content: center;      /* centraliza verticalmente */
+  align-items: center;          /* centraliza horizontalmente */
+  padding: 20px;
+  box-shadow: 0 0 3px rgb(255, 255, 255);
+  overflow: hidden;             /* evita que conteúdo extrapole */
+  box-sizing: border-box;
+}
+
+.texto2, .texto3 {
+  color: gray;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.0rem;
+  line-height: 1.5;
+  margin-bottom: 15px;          /* espaçamento entre os blocos */
+  width: 100%;                 /* ocupa toda largura do círculo */
+}
+
+.titulo-texto2, .titulo-texto3 {
+  color: gray;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.texto2 hr, .texto3 hr {
+  border: none;
+  border-top: 1px solid #aaa;
+  width: 130px;
+  margin: 2px auto 5px auto;
+}
+
+
+
