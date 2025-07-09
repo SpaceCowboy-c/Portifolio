@@ -8,39 +8,20 @@
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
-    background-color: var(--bg-dark);
+    padding: 0;
+    background-color: var(--bg-darker);
     color: var(--text-primary);
     font-family: 'JetBrains Mono', monospace;
+    scroll-behavior: smooth;
 }
 
-.me {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid var(--border-color);
-}
-
-.me img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;  
-}
-
-.navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    padding: 0 4rem;
-    background-color: var(--bg-darker);
+.navbar {
+    background-color: var(--bg-dark) !important;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .navbar-item {
-    color: var(--text-secondary) !important;
-    font-weight: 500;
+    color: var(--text-secondary);
     transition: color 0.3s ease;
 }
 
@@ -49,27 +30,24 @@ html, body {
     background-color: transparent !important;
 }
 
-.navbar-item.is-selected {
-    color: var(--text-primary) !important;
-    font-weight: 700;
-}
-
-.barra {
-    height: 1px;
-    background-color: var(--border-color);
-    border: none;
-    width: 90%;
+.image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--accent-color);
     margin: 0 auto;
+    box-shadow: 0 0 20px rgba(74, 111, 165, 0.5);
 }
 
-.text {
-    text-align: left;
-    max-width: 600px;
-    margin: 100px auto 50px 70px;
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-    line-height: 1.6;
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    color: var(--text-primary);
 }
 
 .skills-container {
@@ -77,8 +55,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    padding: 8rem;
-    margin-top: -220px;
+    padding: 2rem 0;
 }
 
 .skill-card {
@@ -86,13 +63,14 @@ html, body {
     padding: 2rem;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-    background-color: var(--bg-darker);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--bg-dark);
 }
 
 .skill-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-color);
+    box-shadow: 0 5px 15px rgba(74, 111, 165, 0.3);
 }
 
 .skill-title {
@@ -121,18 +99,20 @@ html, body {
     font-weight: 600;
 }
 
+.footer {
+    background-color: var(--bg-dark);
+    border-top: 1px solid var(--border-color);
+}
+
 @media (max-width: 768px) {
-    .navbar-container {
-        padding: 1rem;
+    .hero-body {
+        padding-top: 5rem;
     }
     
-    .text {
-        margin: 50px 20px;
-        font-size: 1rem;
-    }
-        
-    .me {
-        margin-bottom: 30px;
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        margin-top: 2rem;
     }
     
     .skills-container {
@@ -142,17 +122,4 @@ html, body {
     .skill-card {
         width: 100%;
     }
-}
-.me{
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  position: relative;
-  left: 1000px;
-  top: -220px;
-}
-.me img{
-   width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
 }
