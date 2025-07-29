@@ -22,16 +22,48 @@ html, body {
 .navbar-item {
     color: var(--text-secondary);
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .navbar-item:hover {
     color: var(--text-primary) !important;
     background-color: transparent !important;
+    text-shadow: 0 0 8px var(--text-primary);
 }
 
 .title {
-    color: var(--text-primary);
+    font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(
+    -45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  
+   background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   animation: rainbowMove 12s linear infinite;
+   user-select: none;
 }
+
+@keyframes rainbowMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 
 /*cards das hard skills*/
