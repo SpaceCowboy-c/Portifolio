@@ -78,7 +78,7 @@ html, body {
 }
 
 .sobre-section img {
-    max-width: 80%;
+    max-width: 85%;
     border: 2px solid var(--border-color, #ccc);
 }
 #sobre{
