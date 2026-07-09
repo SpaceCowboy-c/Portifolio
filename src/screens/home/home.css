@@ -1,0 +1,124 @@
+.home {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content {
+    margin-left: 220px;
+    flex: 1;
+    background-color: #0f0f0f;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.hero {
+    position: relative;
+    z-index: 2;
+    padding: 40px 60px;
+    max-width: 600px;
+}
+
+.hero-subtitle {
+    color: #7a0a96;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: monospace;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0 24px 0;
+}
+
+.hero-title .highlight {
+    color: #7a0a96;
+}
+
+.hero-description {
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 32px;
+    border: 1px solid #7a0a96;
+    color: #7a0a96;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #7a0a96;
+    color: white;
+}
+
+
+.hero-decoration { /* Decoração à direita */
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 600px;
+    z-index: 1;
+}
+
+.bolha {
+    position: absolute;  /*Cada bolha se posiciona livremente dentro do .hero-decoration */
+    border-radius: 50%; /* Transforma o quadrado em círculo perfeito */
+    filter: blur(60px);  /*desfoca a borda*/
+    opacity: 0.5;
+}
+
+.bolha-1 {
+    width: 300px;
+    height: 300px;
+    background: #7a0a96;
+    top: 50px;
+    right: 100px;
+    animation: float 8s ease-in-out infinite; /* Aplica a animação  "float", durando 8s, repetindo pra sempre */
+}
+
+.bolha-2 {
+    width: 200px;
+    height: 200px;
+    background: #b026c9;
+    bottom: 80px;
+    right: 250px;
+    animation: float 6s ease-in-out infinite reverse; /* "reverse" faz essa bolha se mover na direção oposta da bolha-1*/
+}
+
+.bolha-3 {
+    width: 150px;
+    height: 150px;
+    background: #5a0870;
+    top: 200px;
+    right: 350px;
+    animation: float 10s ease-in-out infinite; /* Duração diferente (10s) garante que as 3 bolhas nunca fiquem "alinhadas" */
+}
+
+@keyframes float {  /*define a flutuação da animação*/
+
+    0%,
+    100% {
+        transform: translate(0, 0);  
+    }
+
+    50% {
+        transform: translate(-30px, 30px);  /*variação da posição da bolha, da esquerda para baixo*/
+    }
+}
