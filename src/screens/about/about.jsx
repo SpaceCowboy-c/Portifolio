@@ -9,14 +9,14 @@ export default function About() {
 
             <main className="content">
                 <section className="about-intro">
-                    <p className="about-subtitle">Sobre mim</p>
+                    <p className="about-subtitle">SOBRE MIM</p>
 
                     <p>
-                        Sou desenvolvedora Full-Stack, com foco em desenvolvimento <span className="highlight">web</span> e <span className="highlight">mobile</span>.
+                        Sou desenvolvedora Full-Stack, com foco e especialidade em desenvolvimento <span className="highlight">web</span> e <span className="highlight">mobile</span>.
                     </p>
 
                     <p>
-                        Tenho 21 anos e estudo Engenharia de Software na Universidade
+                        Tenho 21 anos e estou no 6º período do curso de Engenharia de Software na Universidade
                         do Vale do Taquari (Univates), onde venho construindo uma base
                         sólida em desenvolvimento de software enquanto aplico esse
                         conhecimento em projetos práticos.
@@ -48,22 +48,22 @@ export default function About() {
 const softSkills = [
     {
         title: 'Comunicação',
-        description: '...'
+        description: 'Capacidade de expressar ideias com clareza e objetividade, adaptando a linguagem ao público e praticando a escuta ativa para garantir o alinhamento'
     },
     {
         title: 'Trabalho em equipe',
-        description: '...'
+        description: 'Capacidade de colaborar ativamente com o grupo, compartilhando conhecimentos e apoiando os colegas para alcançar objetivos comuns'
     },
     {
         title: 'Adaptabilidade',
-        description: '...'
+        description: 'Capacidade de se ajustar rapidamente a mudanças, novos cenários e desafios'
     },
     {
-        title: '...',
-        description: '...'
+        title: 'Comprometimento',
+        description: 'Capacidade de agir com alto nível de comprometimento para entregar sempre os melhores resultados'
     },
     {
         title: 'Organização',
-        description: '...'
+        description: 'Capacidade de priorizar atividades e planejar a rotina de trabalho de forma eficiente para cumprir prazos e metas.'
     },
 ];

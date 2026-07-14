@@ -3,13 +3,12 @@
 }
 
 .content {
-    gap: 40px;
+    gap: 70px;  /*distancia entre as duas colunas*/
     background-color: #0f0f0f;
     color: white;
 }
 
 /*sessão onde tem o texto sobre mim*/
-
 .about-intro {
     max-width: 700px;
     margin-bottom: 80px;
@@ -17,22 +16,18 @@
     padding-top: 70px;
 }
 
-.about-subtitle {
-    color: #7a0a96;
-    font-size: 14px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 24px;
+.about-subtitle {  /*titulo da sessão sobre mim*/
+    font-size: 17px;
+    letter-spacing: 0px;
     font-family: monospace;
-    /* Animação de entrada */
-    opacity: 0;
-    animation: fadeInUp 0.6s ease forwards;
 }
 
 .about-intro p {
     font-size: 17px;
-    line-height: 1.9;
+    line-height: 1.5;
     color: #ccc;
+    text-align: justify;  /*deixa o texto justificado*/
+    font-family: monospace;
     margin-bottom: 22px;
     opacity: 0;
     animation: fadeInUp 0.6s ease forwards; /* Cada parágrafo entra com um pequeno atraso, criando um efeito de "cascata" */
@@ -67,17 +62,16 @@
     }
 }
 
-/* ===== Seção de Soft Skills ===== */
+/*Seção de Soft Skills*/
 
 css.soft-skills {
-    max-width: 380px;
+    max-width: 480px;
     flex-shrink: 0;
-    margin-left: 40px;
 }
 
-.section-title {
-    color: #7a0a96;
-    font-size: 14px;
+.section-title {  /*TITULO DA SESSÃO DE SOFT SKILLS*/
+    color: #ffffff;
+    font-size: 16px;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 24px;
@@ -90,19 +84,19 @@ css.soft-skills {
 .soft-skills-column {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 12px;  /*distancia entre os cards*/
 }
 
 .soft-skill-card {
-    background-color: #1a1a1a;
-    border: 1px solid #2a2a2a;
-    border-left: 3px solid #7a0a96;
-    border-radius: 10px;
+    background-color: #1a1a1a;  /*fundo do card*/
+    border: 1px solid #2a2a2a;  /*mini borda do card*/
+    border-left: 3px solid #7a0a96;  /*borda lateral do card*/
+    border-radius: 10px;  /*borda arredondada do card*/
     padding: 16px 22px;
     transition: all 0.3s ease;
     cursor: default;
     opacity: 0;
-    animation: fadeInUp 0.5s ease forwards;
+    animation: fadeInUp 0.5s ease forwards; /*animação de entrada dos cards*/
 }
 
 .soft-skill-card:nth-child(1) {
@@ -132,16 +126,17 @@ css.soft-skills {
     box-shadow: 0 8px 20px rgba(122, 10, 150, 0.2);
 }
 
-.soft-skill-card h3 {
+.soft-skill-card h3 {  /*titulo dentro do card*/
     font-size: 15px;
+    font-family: monospace;
     margin-bottom: 6px;
     color: white;
-    font-weight: 600;
 }
 
-.soft-skill-card p {
-    font-size: 13px;
+.soft-skill-card p {  /*texto dentro do card*/
+    font-size: 12px;
     color: #999;
+    font-family: monospace;
     margin: 0;
     line-height: 1.5;
 }
