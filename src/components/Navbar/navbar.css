@@ -55,3 +55,16 @@
     color: white;
     border-color: white;
 }
+
+.navbar-footer {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    font-family: monospace;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/navbar';  //importa o código do navbar
 import './home.css';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -20,9 +21,9 @@ export default function Home() {
                         Transformo ideias em aplicações rápidas, funcionais e bem projetadas.
                     </p>
 
-                    <a href="#contact" className="hero-button">
+                    <Link to="/contact" className="hero-button">
                         Fale comigo
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="hero-decoration"> 

@@ -1,0 +1,142 @@
+.contact {
+    min-height: 100vh;
+}
+
+.contact-content {
+    margin-left: 220px;
+    background-color: #0f0f0f;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 100px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.contact-photo-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    opacity: 0;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.contact-photo {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #7a0a96;
+    box-shadow: 0 0 60px rgba(122, 10, 150, 0.3);
+}
+
+.contact-info {
+    max-width: 500px;
+}
+
+.contact-subtitle {
+    color: #7a0a96;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: monospace;
+    opacity: 0;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.contact-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    opacity: 0;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.15s;
+}
+
+.contact-description {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.3s;
+}
+
+
+.contact-links {
+    display: flex;
+    gap: 16px;
+    opacity: 0;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.45s;
+}
+
+.contact-link {
+    padding: 12px 24px;
+    border: 1px solid #7a0a96;
+    color: #7a0a96;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #7a0a96;
+    color: white;
+}
+
+.contact-farewell {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+    line-height: 1.7;
+    max-width: 420px;
+    opacity: 0;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.6s;
+}
+
+
+@keyframes revealIn {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(30px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .contact-photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .contact-links {
+        justify-content: center;
+    }
+
+    .contact-farewell {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

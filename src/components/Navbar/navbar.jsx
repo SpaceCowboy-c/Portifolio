@@ -17,6 +17,10 @@ export default function Navbar() {
                 <li><Link to="/projects">Projects</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
+
+            <p className="navbar-footer">
+                Criado por: Caroline Martini <br /> Julho, 2026
+            </p>
         </nav>
     );
 }

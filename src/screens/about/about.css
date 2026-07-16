@@ -5,7 +5,6 @@
 .content {
     gap: 70px;  /*distancia entre as duas colunas*/
     background-color: #0f0f0f;
-    color: white;
 }
 
 /*sessão onde tem o texto sobre mim*/
@@ -13,24 +12,27 @@
     max-width: 700px;
     margin-bottom: 80px;
     padding-left: 70px;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .about-subtitle {  /*titulo da sessão sobre mim*/
     font-size: 17px;
+    text-transform: uppercase;
     letter-spacing: 0px;
     font-family: monospace;
+    opacity: 0;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .about-intro p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.5;
     color: #ccc;
     text-align: justify;  /*deixa o texto justificado*/
     font-family: monospace;
     margin-bottom: 22px;
     opacity: 0;
-    animation: fadeInUp 0.6s ease forwards; /* Cada parágrafo entra com um pequeno atraso, criando um efeito de "cascata" */
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; /* Cada parágrafo entra com um pequeno atraso, criando um efeito de "cascata" */
 }
 
 .about-intro p:nth-child(2) {
@@ -50,34 +52,21 @@
     font-weight: 600;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /*Seção de Soft Skills*/
 
-css.soft-skills {
+.soft-skills {
     max-width: 480px;
     flex-shrink: 0;
 }
 
 .section-title {  /*TITULO DA SESSÃO DE SOFT SKILLS*/
-    color: #ffffff;
-    font-size: 16px;
-    letter-spacing: 3px;
+    color: #ccc;
+    font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 24px;
     font-family: monospace;
     opacity: 0;
-    animation: fadeInUp 0.6s ease forwards;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     animation-delay: 0.2s;
 }
 
@@ -96,7 +85,7 @@ css.soft-skills {
     transition: all 0.3s ease;
     cursor: default;
     opacity: 0;
-    animation: fadeInUp 0.5s ease forwards; /*animação de entrada dos cards*/
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; /*animação de entrada dos cards*/
 }
 
 .soft-skill-card:nth-child(1) {
@@ -127,16 +116,30 @@ css.soft-skills {
 }
 
 .soft-skill-card h3 {  /*titulo dentro do card*/
-    font-size: 15px;
+    font-size: 13px;
     font-family: monospace;
     margin-bottom: 6px;
-    color: white;
+    color: #ffffff;
 }
 
 .soft-skill-card p {  /*texto dentro do card*/
-    font-size: 12px;
-    color: #999;
+    font-size: 11px;
+    color: #ccc;
     font-family: monospace;
     margin: 0;
     line-height: 1.5;
+}
+
+@keyframes revealIn {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(30px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) scale(1);
+    }
 }

@@ -9,7 +9,7 @@ export default function About() {
 
             <main className="content">
                 <section className="about-intro">
-                    <p className="about-subtitle">SOBRE MIM</p>
+                    <p className="about-subtitle">Sobre Mim</p>
 
                     <p>
                         Sou desenvolvedora Full-Stack, com foco e especialidade em desenvolvimento <span className="highlight">web</span> e <span className="highlight">mobile</span>.
@@ -48,11 +48,11 @@ export default function About() {
 const softSkills = [
     {
         title: 'Comunicação',
-        description: 'Capacidade de expressar ideias com clareza e objetividade, adaptando a linguagem ao público e praticando a escuta ativa para garantir o alinhamento'
+        description: 'Capacidade de expressar ideias com clareza e objetividade.'
     },
     {
         title: 'Trabalho em equipe',
-        description: 'Capacidade de colaborar ativamente com o grupo, compartilhando conhecimentos e apoiando os colegas para alcançar objetivos comuns'
+        description: 'Capacidade de colaborar ativamente com o grupo, compartilhando conhecimentos.'
     },
     {
         title: 'Adaptabilidade',
@@ -64,6 +64,6 @@ const softSkills = [
     },
     {
         title: 'Organização',
-        description: 'Capacidade de priorizar atividades e planejar a rotina de trabalho de forma eficiente para cumprir prazos e metas.'
+        description: 'Capacidade de priorizar atividades e planejar a rotina de trabalho de forma eficiente'
     },
 ];

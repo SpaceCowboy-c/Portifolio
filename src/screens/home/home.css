@@ -31,7 +31,7 @@
     margin-bottom: 16px;
     font-family: monospace;
     opacity: 0;
-    animation: fadeInUp 0.7s ease forwards; /* Animação de entrada */
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; /* Animação de entrada */
 }
 
 .hero-title {
@@ -40,7 +40,7 @@
     line-height: 1.2;
     margin: 0 0 24px 0;
     opacity: 0;
-    animation: fadeInUp 0.7s ease forwards;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     animation-delay: 0.15s;
 }
 
@@ -54,7 +54,7 @@
     margin-bottom: 32px;
     line-height: 1.6;
     opacity: 0;
-    animation: fadeInUp 0.7s ease forwards;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     animation-delay: 0.3s;
 }
 
@@ -69,7 +69,7 @@
     text-transform: uppercase;
     transition: all 0.3s ease;
     opacity: 0;
-    animation: fadeInUp 0.7s ease forwards;
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     animation-delay: 0.45s;
 }
 
@@ -144,15 +144,17 @@
 }
 
 /* Animações de entrada */
-@keyframes fadeInUp {
+@keyframes revealIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        filter: blur(10px);
+        transform: translateY(30px) scale(0.96);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        filter: blur(0);
+        transform: translateY(0) scale(1);
     }
 }
 

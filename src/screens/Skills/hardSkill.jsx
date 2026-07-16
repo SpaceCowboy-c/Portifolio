@@ -93,7 +93,7 @@ const markup = [
 const frameworks = [
     { title: 'React', level: 'Intermediário', icon: 'devicon-react-original colored' },
     { title: 'React Native', level: 'Intermediário', icon: 'devicon-react-original colored' },
-    { title: 'Node.js', level: 'Intermediário', icon: 'devicon-nodejs-plain colored' },
+    { title: 'Angular.js', level: 'Básico', icon: 'devicon-angularjs-plain colored' },
 ];
 
 const databases = [
@@ -103,8 +103,7 @@ const databases = [
 ];
 
 const tools = [
-    { title: 'Redes', level: 'Intermediário', icon: 'devicon-ssh-original' },
-    { title: 'Linux', level: 'Básico', icon: 'devicon-linux-plain' },
+    { title: 'Visual Studio Code', level: 'Intermediário', icon: 'devicon-vscode-plain colored' },
     { title: 'Git', level: 'Intermediário', icon: 'devicon-git-plain colored' },
     { title: 'GitHub', level: 'Intermediário', icon: 'devicon-github-original colored' },
     { title: 'Docker', level: 'Básico', icon: 'devicon-docker-plain colored' },
