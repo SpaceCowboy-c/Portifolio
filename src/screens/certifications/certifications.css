@@ -1,13 +1,15 @@
 .certifications {
     min-height: 100vh;
+        background: #0f0f0f;
 }
 
 .certifications-content {
     margin-left: 220px;
     background-color: #0f0f0f;
-    color: rgb(182, 103, 103);
+    color: #ffffff;
     padding: 100px 80px 80px 80px;
     box-sizing: border-box;
+    background: #0f0f0f;
 }
 
 
@@ -45,7 +47,7 @@
 .certifications-row {
     display: flex;
     gap: 30px;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .certifications-row .certifications-card:nth-child(1) {
@@ -64,7 +66,7 @@
     background-color: #1a1a1a;
     border: 1px solid #2a2a2a;
     border-radius: 16px;
-    padding: 36px 32px;
+    padding: 65px 40px;
     width: 320px;
     text-align: center;
     text-decoration: none;
@@ -100,7 +102,7 @@
 
 .certifications-card-description {
     font-size: 13px;
-    color: #999;
+    color: #ccc;
     line-height: 1.6;
     margin: 0;
 }

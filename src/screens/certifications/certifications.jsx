@@ -23,7 +23,7 @@ export default function Certifications() {
                         >
                                 <i className={certification.icon}></i>
                                 <h3 className="certifications-name">{certification.name}</h3>
-                                <p className="certifications-description">{certification.description}</p>
+                                    <p className="certifications-card-description">{certification.description}</p>
                                 <span className="certifications-link">Ver certificado →</span>
                         </a>
                     ))}        
