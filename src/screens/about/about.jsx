@@ -7,7 +7,7 @@ export default function About() {
         <div className="about">
             <Navbar />
 
-            <main className="content">
+            <main className="about-content">
                 <section className="about-intro">
                     <p className="about-subtitle">Sobre Mim</p>
 

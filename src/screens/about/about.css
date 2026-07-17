@@ -2,16 +2,24 @@
     min-height: 100vh;
 }
 
-.content {
-    gap: 70px;  /*distancia entre as duas colunas*/
+.about-content {
+    margin-left: 220px;
     background-color: #0f0f0f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    min-height: 100vh;
+    padding: 60px 60px 80px 40px;
+    box-sizing: border-box;
 }
 
 /*sessão onde tem o texto sobre mim*/
 .about-intro {
     max-width: 700px;
     margin-bottom: 80px;
-    padding-left: 70px;
+    padding-left: 40px;
     padding-top: 50px;
 }
 

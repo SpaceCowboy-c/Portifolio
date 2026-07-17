@@ -2,17 +2,16 @@
     min-height: 100vh;
 }
 
-.content {
+.home-content {
     margin-left: 220px;
     background-color: #0f0f0f;
     color: white;
     position: relative;
     display: flex;
     align-items: center;
-    /* centraliza verticalmente, texto e bolhas lado a lado */
     overflow: hidden;
     min-height: 100vh;
-    padding: 40px 60px;
+    padding: 40px 80px;
     box-sizing: border-box;
 }
 
@@ -20,9 +19,9 @@
     position: relative;
     z-index: 2;
     max-width: 600px;
-    padding-left: 70px;
+    transform: translateY(-30px);
+    /* sobe 40px */
 }
-
 .hero-subtitle {
     color: #7a0a96;
     font-size: 14px;
@@ -31,7 +30,7 @@
     margin-bottom: 16px;
     font-family: monospace;
     opacity: 0;
-    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; /* Animação de entrada */
+    animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .hero-title {
@@ -78,8 +77,7 @@
     color: white;
 }
 
-
-.hero-decoration { /* Decoração à direita */
+.hero-decoration {
     position: absolute;
     right: -100px;
     top: 50%;
@@ -94,11 +92,8 @@
 
 .bolha {
     position: absolute;
-    /*Cada bolha se posiciona livremente dentro do .hero-decoration */
     border-radius: 50%;
-    /* Transforma o quadrado em círculo perfeito */
     filter: blur(60px);
-    /*desfoca a borda*/
     opacity: 0.5;
 }
 
@@ -109,7 +104,6 @@
     top: 50px;
     right: 100px;
     animation: float 8s ease-in-out infinite;
-    /* Aplica a animação  "float", durando 8s, repetindo pra sempre */
 }
 
 .bolha-2 {
@@ -118,7 +112,7 @@
     background: #b026c9;
     bottom: 80px;
     right: 250px;
-    animation: float 6s ease-in-out infinite reverse; /* "reverse" faz essa bolha se mover na direção oposta da bolha-1*/
+    animation: float 6s ease-in-out infinite reverse;
 }
 
 .bolha-3 {
@@ -127,11 +121,10 @@
     background: #5a0870;
     top: 200px;
     right: 350px;
-    animation: float 10s ease-in-out infinite; /* Duração diferente (10s) garante que as 3 bolhas nunca fiquem "alinhadas" */
+    animation: float 10s ease-in-out infinite;
 }
 
 @keyframes float {
-    /*define a flutuação da animação*/
 
     0%,
     100% {
@@ -143,7 +136,6 @@
     }
 }
 
-/* Animações de entrada */
 @keyframes revealIn {
     from {
         opacity: 0;
