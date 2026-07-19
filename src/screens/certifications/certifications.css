@@ -45,11 +45,12 @@
 }
 
 .certifications-row {
-    display: flex;
+    display: grid;
+    /* Mudou de flex para grid */
+    grid-template-columns: repeat(3, 1fr);
+    /* Cria 3 colunas iguais */
     gap: 30px;
-    flex-wrap: wrap;
 }
-
 .certifications-row .certifications-card:nth-child(1) {
     animation-delay: 0.45s;
 }
@@ -66,8 +67,7 @@
     background-color: #1a1a1a;
     border: 1px solid #2a2a2a;
     border-radius: 16px;
-    padding: 65px 40px;
-    width: 320px;
+    padding: 65px 20px;
     text-align: center;
     text-decoration: none;
     color: inherit;

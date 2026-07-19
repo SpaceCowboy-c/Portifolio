@@ -9,7 +9,7 @@ export default function HardSkill() {
             <main className="hard-skill-content">
                 <section className="hard-skill-list">
                     <div className="skill-category">
-                        <p className="hard-skill-list-title">Linguagens</p>
+                        <p className="hard-skill-list-title">Minha Stack de Tecnologias</p>
                         <div className="skills-grid">
                             {languages.map((skill, index) => (
                                 <div className="skill-card" key={index}>
@@ -22,7 +22,7 @@ export default function HardSkill() {
                     </div>
 
                     <div className="skill-category">
-                        <p className="hard-skill-list-title">Ferramentas</p>
+                        <p className="hard-skill-list-title">Ferramentas que utilizo em meus projetos</p>
                         <div className="skills-grid">
                             {tools.map((skill, index) => (
                                 <div className="skill-card" key={index}>
@@ -35,7 +35,7 @@ export default function HardSkill() {
                     </div>
 
                     <div className="skill-category">
-                        <p className="hard-skill-list-title">Frameworks & Bibliotecas</p>
+                        <p className="hard-skill-list-title">Frameworks & Bibliotecas em constante aprimoramento</p>
                         <div className="skills-grid">
                             {frameworks.map((skill, index) => (
                                 <div className="skill-card" key={index}>
@@ -47,7 +47,7 @@ export default function HardSkill() {
                         </div>
                     </div>
                     <div className="skill-category">
-                        <p className="hard-skill-list-title">Bancos de Dados</p>
+                        <p className="hard-skill-list-title">Bancos de Dados que utilizo em meus projetos</p>
                         <div className="skills-grid">
                             {databases.map((skill, index) => (
                                 <div className="skill-card" key={index}>
