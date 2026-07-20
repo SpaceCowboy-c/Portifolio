@@ -63,7 +63,7 @@
 /*Seção de Soft Skills*/
 
 .soft-skills {
-    max-width: 480px;
+    max-width: 470px;
     flex-shrink: 0;
 }
 
@@ -89,7 +89,7 @@
     border: 1px solid #2a2a2a;  /*mini borda do card*/
     border-left: 3px solid #7a0a96;  /*borda lateral do card*/
     border-radius: 10px;  /*borda arredondada do card*/
-    padding: 16px 22px;
+    padding: 13px 22px;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -117,7 +117,7 @@
 }
 
 .soft-skill-card h3 {  /*titulo dentro do card*/
-    font-size: 14px;
+    font-size: 13px;
     font-family: monospace;
     margin-bottom: 6px;
     color: #ffffff;

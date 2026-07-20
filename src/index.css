@@ -5,3 +5,7 @@ body {
     /* ou a cor que quiser */
     min-height: 100vh;
 }
+
+body::-webkit-scrollbar {  /*disabilita a barra de rolagem*/
+    display: none;
+}
