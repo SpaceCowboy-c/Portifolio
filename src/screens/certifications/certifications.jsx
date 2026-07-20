@@ -44,7 +44,7 @@ const certifications = [
     {
         name: 'Red Hat',
         description: 'Certificado de participação em curso do Red Hat para aplicações em linux.',
-        file: '/certifications/certificate-of-attendance.pdf',
+        file: '/certifications/Certificate-of-Attendance.pdf',
         icon: 'devicon-redhat-plain colored'
     },
     {
