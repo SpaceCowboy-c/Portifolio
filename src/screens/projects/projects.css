@@ -9,7 +9,6 @@
     color: #ffffff;
     padding: 100px 80px 80px 80px;
     box-sizing: border-box;
-    background: #0f0f0f;
 }
 
 
@@ -66,8 +65,10 @@
     background-color: #1a1a1a;
     border: 1px solid #2a2a2a;
     border-radius: 16px;
-    padding: 20px 30px;
-    width: 400px;
+    padding: 40px 40px;
+    width: 420px;
+    position: relative;
+    overflow: hidden;
     text-align: justify;
     text-decoration: none;
     color: inherit;
@@ -80,17 +81,22 @@
     animation: revealIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.projects-card:hover {
-    border-color: #7a0a96;
-    background-color: #1f1424;
-    transform: translateY(-8px);
-    box-shadow: 0 16px 32px rgba(122, 10, 150, 0.25);
+.projects-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(122, 10, 150, .18), transparent 65%);
+    opacity: 0;
+    transition: .3s;
 }
 
-.projects-card i {
-    font-size: 3rem;
-    margin-bottom: 8px;
-    color: #7a0a96;
+.projects-card:hover {
+    border-color: #7a0a96;
+    box-shadow: 0 0 0 1px rgba(122, 10, 150, .2), 0 18px 35px rgba(0, 0, 0, .35);
+}
+
+.projects-card:hover::before {
+    opacity: 1;
 }
 
 .projects-name {
@@ -101,7 +107,7 @@
 }
 
 .projects-card-description {
-    font-size: 13px;
+    font-size: 14px;
     color: #ccc;
     line-height: 1.6;
     margin: 0;

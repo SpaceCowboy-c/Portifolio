@@ -7,70 +7,22 @@ export default function HardSkill() {
         <div className="hard-skill">
             <Navbar />
             <main className="hard-skill-content">
-                <section className="hard-skill-list">
-                    <div className="skill-category">
-                        <p className="hard-skill-list-title">Minha Stack de Tecnologias</p>
+                {sections.map((section, index) => (
+                    <section className="skill-category" key={index}>
+                       <div className="category-header">
+                            <p className="hard-skill-list-title"> {section.title} </p>
+                        </div>
                         <div className="skills-grid">
-                            {languages.map((skill, index) => (
-                                <div className="skill-card" key={index}>
+                            {section.skills.map((skill, i) => (
+                                <div className="skill-card" key={i}>
                                     <i className={skill.icon}></i>
-                                    <span className="skill-name">{skill.title}</span>
-                                    <span className="skill-level">{skill.level}</span>
+                                    <span className="skill-name"> {skill.title} </span>
+                                    <span className="skill-level">{skill.level}  </span>
                                 </div>
                             ))}
                         </div>
-                    </div>
-
-                    <div className="skill-category">
-                        <p className="hard-skill-list-title">Ferramentas que utilizo em meus projetos</p>
-                        <div className="skills-grid">
-                            {tools.map((skill, index) => (
-                                <div className="skill-card" key={index}>
-                                    <i className={skill.icon}></i>
-                                    <span className="skill-name">{skill.title}</span>
-                                    <span className="skill-level">{skill.level}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="skill-category">
-                        <p className="hard-skill-list-title">Frameworks & Bibliotecas em constante aprimoramento</p>
-                        <div className="skills-grid">
-                            {frameworks.map((skill, index) => (
-                                <div className="skill-card" key={index}>
-                                    <i className={skill.icon}></i>
-                                    <span className="skill-name">{skill.title}</span>
-                                    <span className="skill-level">{skill.level}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="skill-category">
-                        <p className="hard-skill-list-title">Bancos de Dados que utilizo em meus projetos</p>
-                        <div className="skills-grid">
-                            {databases.map((skill, index) => (
-                                <div className="skill-card" key={index}>
-                                    <i className={skill.icon}></i>
-                                    <span className="skill-name">{skill.title}</span>
-                                    <span className="skill-level">{skill.level}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="skill-category">
-                        <p className="hard-skill-list-title">Marcação & Estilo</p>
-                        <div className="skills-grid">
-                            {markup.map((skill, index) => (
-                                <div className="skill-card" key={index}>
-                                    <i className={skill.icon}></i>
-                                    <span className="skill-name">{skill.title}</span>
-                                    <span className="skill-level">{skill.level}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                ))}
             </main>
         </div>
     );
@@ -107,4 +59,27 @@ const tools = [
     { title: 'Git', level: 'Intermediário', icon: 'devicon-git-plain colored' },
     { title: 'GitHub', level: 'Intermediário', icon: 'devicon-github-original colored' },
     { title: 'Docker', level: 'Básico', icon: 'devicon-docker-plain colored' },
+];
+
+const sections = [
+    {
+        title: "Minha Stack de Tecnologias",
+        skills: languages
+    },
+    {
+        title: "Ferramentas que utilizo em meus projetos",
+        skills: tools
+    },
+    {
+        title: "Frameworks & Bibliotecas em constante aprimoramento",
+        skills: frameworks
+    },
+    {
+        title: "Bancos de Dados que utilizo em meus projetos",
+        skills: databases
+    },
+    {
+        title: "Marcação & Estilo",
+        skills: markup
+    }
 ];

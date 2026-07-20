@@ -21,7 +21,6 @@ export default function Projects() {
                               className="projects-card"
                               key={index}
                           >
-                                  <i className={project.icon}></i>
                                   <h3 className="projects-name">{project.name}</h3>
                                       <p className="projects-card-description">{project.description}</p>
                                     <span className="projects-link">Ver projeto → (github)</span>

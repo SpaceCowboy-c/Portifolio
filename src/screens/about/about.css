@@ -90,41 +90,34 @@
     border-left: 3px solid #7a0a96;  /*borda lateral do card*/
     border-radius: 10px;  /*borda arredondada do card*/
     padding: 16px 22px;
+    position: relative;
+    overflow: hidden;
     transition: all 0.3s ease;
     cursor: default;
     opacity: 0;
     animation: revealIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; /*animação de entrada dos cards*/
 }
 
-.soft-skill-card:nth-child(1) {
-    animation-delay: 0.3s;
-}
-
-.soft-skill-card:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.soft-skill-card:nth-child(3) {
-    animation-delay: 0.5s;
-}
-
-.soft-skill-card:nth-child(4) {
-    animation-delay: 0.6s;
-}
-
-.soft-skill-card:nth-child(5) {
-    animation-delay: 0.7s;
+.soft-skill-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(122, 10, 150, .18), transparent 65%);
+    opacity: 0;
+    transition: .3s;
 }
 
 .soft-skill-card:hover {
     border-color: #7a0a96;
-    background-color: #1f1424;
-    transform: translateX(6px);
-    box-shadow: 0 8px 20px rgba(122, 10, 150, 0.2);
+    box-shadow: 0 0 0 1px rgba(122, 10, 150, .2), 0 18px 35px rgba(0, 0, 0, .35);
+}
+
+.soft-skill-card:hover::before {
+    opacity: 1;
 }
 
 .soft-skill-card h3 {  /*titulo dentro do card*/
-    font-size: 13px;
+    font-size: 14px;
     font-family: monospace;
     margin-bottom: 6px;
     color: #ffffff;
