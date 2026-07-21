@@ -192,3 +192,29 @@
     }
 
 }
+
+/* Cole no final do hardskill.css */
+@media (max-width: 768px) {
+    .about-content {
+        margin-left: 0;
+        padding-top: 90px;
+        flex-direction: column;
+        padding-left: 24px;
+        padding-right: 24px;
+        gap: 40px;
+        align-items: center;
+        /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .about-intro,
+    .soft-skills {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .section-title {
+        text-align: center;
+        width: 100%;
+    }
+}

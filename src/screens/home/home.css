@@ -155,3 +155,81 @@
         opacity: 1;
     }
 }
+
+
+
+/* Quando o navegador detecta que a largura da tela é menor ou igual a 768px (um smartphone ou tablet vertical),
+ele lê o bloco @media e substitui apenas as propriedades específicas */
+@media (max-width: 768px) {
+    .home-content {
+        margin-left: 0;
+        padding: 100px 24px 40px 24px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero {
+        max-width: 100%;
+        transform: translateY(0);
+        /* Reseta o deslocamento para alinhar perfeitamente */
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+
+    .hero-button {
+        padding: 12px 28px;
+        font-size: 13px;
+        width: 100%;
+        max-width: 240px;
+        box-sizing: border-box;
+    }
+
+    .hero-decoration {
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        pointer-events: none; /* Centraliza exatamente atrás do texto */
+        z-index: 1;
+    }
+
+    .bolha-1 {
+         width: 160px;
+         height: 160px;
+         top: 10px;
+         left: 10px;
+         filter: blur(45px);
+    }
+
+    .bolha-2 {
+        width: 130px;
+        height: 130px;
+        bottom: 10px;
+        right: 10px;
+        filter: blur(40px);
+    }
+
+    .bolha-3 {
+        width: 90px;
+        height: 90px;
+        top: 60px;
+        left: 60px;
+        filter: blur(30px);
+    }
+}

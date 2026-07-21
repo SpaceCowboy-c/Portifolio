@@ -231,3 +231,24 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) { 
+    .about-content {
+        margin-left: 0; /* Remove a margem lateral da navbar */
+        padding-top: 80px; /* Espaço para a navbar do topo não cobrir o texto */
+        flex-direction: column;  /*empilha os conteudos sobre mim e softskills*/
+        padding-left: 24px;
+        padding-right: 24px;
+        gap: 40px;
+    }
+
+    .about-intro,
+    .soft-skills {
+        max-width: 100%;
+        padding-left: 0;
+    }
+}
+
+.about-intro p {
+    font-size: 14px; /* Fonte confortável para leitura mobile */
+}

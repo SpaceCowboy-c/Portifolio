@@ -67,15 +67,15 @@ const sections = [
         skills: languages
     },
     {
-        title: "Ferramentas que utilizo em meus projetos",
+        title: "Ferramentas que domino",
         skills: tools
     },
     {
-        title: "Frameworks & Bibliotecas em constante aprimoramento",
+        title: "Frameworks & Bibliotecas",
         skills: frameworks
     },
     {
-        title: "Bancos de Dados que utilizo em meus projetos",
+        title: "Bancos de Dados que domino",
         skills: databases
     },
     {
