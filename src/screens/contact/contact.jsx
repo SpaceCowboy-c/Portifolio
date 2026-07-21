@@ -4,6 +4,27 @@ import './contact.css';
 import Foto_Perfil from '../../assets/Foto_Perfil.jpeg';
 
 export default function Contact() {
+
+    const email = "caroline.martini@universo.univates.br";
+    // Corrigida a digitação da palavra "trabalho"
+    const subject = encodeURIComponent("Olá, gostaria de conversar com você sobre oportunidade de trabalho");
+
+    const handleEmailClick = () => {
+        // Detecta se o usuário está em dispositivo móvel (celular/tablet)
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            // No Mobile/App: dispara o mailto que o celular entende nativamente
+            window.location.href = `mailto:${email}?subject=${subject}`;
+        } else {
+            // No Computador/Web: abre a tela de composição do Gmail em nova aba
+            window.open(
+                `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}`,
+                '_blank'
+            );
+        }
+    };
+
     return (
         <div className="contact">
             <Navbar />
@@ -21,7 +42,14 @@ export default function Contact() {
                     </p>
 
                     <div className="contact-links">
-                        <a href="https://mail.google.com/mail/?view=cm&to=caroline.martini@universo.univates.br" target="_blank" rel="noreferrer" className="contact-link">Email</a>
+                        <button
+                            type="button"
+                            onClick={handleEmailClick}
+                            className="contact-link"
+                        >
+                            Email
+                        </button>
+
                         <a href="https://www.linkedin.com/in/caroline-martini-63a5523a4/" target="_blank" rel="noreferrer" className="contact-link">LinkedIn</a>
                         <a href="https://github.com/SpaceCowboy-c/" target="_blank" rel="noreferrer" className="contact-link">GitHub</a>
                     </div>
@@ -35,4 +63,4 @@ export default function Contact() {
             </main>
         </div>
     );
-}          
+}

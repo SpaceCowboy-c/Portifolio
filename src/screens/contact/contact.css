@@ -83,7 +83,10 @@
     text-transform: uppercase;
     border-radius: 6px;
     transition: all 0.3s ease;
+    cursor: pointer;
+    background: transparent;
 }
+
 
 .contact-link:hover {
     background-color: #7a0a96;

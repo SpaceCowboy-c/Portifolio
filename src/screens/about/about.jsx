@@ -8,27 +8,35 @@ export default function About() {
             <Navbar />
 
             <main className="about-content">
+                {/* Lado Esquerdo: Introdução */}
                 <section className="about-intro">
                     <p className="about-subtitle">Sobre Mim</p>
 
-                    <p>
-                        Sou desenvolvedora Full-Stack, com foco e especialidade em desenvolvimento <span className="highlight">web</span> e <span className="highlight">mobile</span>.
+                    <h1 className="about-main-title">
+                        Transformando ideias em <span className="highlight-purple">código limpo</span> e soluções reais.
+                    </h1>
+
+                    <p className="about-paragraph">
+                        Sou desenvolvedora Full-Stack com foco e especialidade em desenvolvimento <span className="highlight">web</span> e <span className="highlight">mobile</span>.
                     </p>
 
-                    <p>
-                        Tenho 21 anos e estou no 6º período do curso de Engenharia de Software na Universidade
-                        do Vale do Taquari (Univates), onde venho construindo uma base
-                        sólida em desenvolvimento de software enquanto aplico esse
-                        conhecimento em projetos práticos.
+                    <p className="about-paragraph">
+                        Atualmente no 6º período do curso de Engenharia de Software na Universidade do Vale do Taquari (Univates), onde venho construindo uma base sólida em arquitetura de software enquanto aplico esse conhecimento em projetos práticos.
                     </p>
 
-                    <p>
-                        Gosto de transformar ideias em soluções funcionais e bem
-                        pensadas, unindo bom design com código limpo e organizado.
+                    <p className="about-paragraph">
+                        Gosto de criar soluções funcionais, bem estruturadas e com excelente experiência de usuário, unindo bom design com código escalável e organizado.
                     </p>
+
+                    {/* Destaques rápidos / Tags */}
+                    <div className="about-tags">
+                        <span className="about-tag">🎓 Eng. de Software (Univates)</span>
+                        <span className="about-tag">💻 Full-Stack Web developer</span>
+                        <span className="about-tag">💻 Especialista em desenvolvimento web/mobile</span>
+                    </div>
                 </section>
 
-    
+                {/* Lado Direito: Soft Skills (Sem ícones) */}
                 <section className="soft-skills">
                     <p className="section-title">Soft Skills</p>
                     <div className="soft-skills-column">
@@ -48,22 +56,22 @@ export default function About() {
 const softSkills = [
     {
         title: 'Comunicação',
-        description: 'Capacidade de expressar ideias com clareza e objetividade.'
+        description: 'Clareza e objetividade ao expressar ideias, alinhar expectativas e documentar processos.'
     },
     {
         title: 'Trabalho em equipe',
-        description: 'Capacidade de colaborar ativamente com o grupo, compartilhando conhecimentos.'
+        description: 'Colaboração ativa com o time, compartilhando conhecimento e somando forças para resolver problemas.'
     },
     {
         title: 'Adaptabilidade',
-        description: 'Capacidade de se ajustar rapidamente a mudanças, novos cenários e desafios'
+        description: 'Aprendizado rápido e facilidade de adaptação a novas tecnologias, ferramentas e cenários.'
     },
     {
         title: 'Comprometimento',
-        description: 'Capacidade de agir com alto nível de comprometimento para entregar sempre os melhores resultados'
+        description: 'Foco em entregas de alto nível, responsabilidade com prazos e constância nos resultados.'
     },
     {
         title: 'Organização',
-        description: 'Capacidade de priorizar atividades e planejar a rotina de trabalho de forma eficiente'
+        description: 'Planejamento eficiente da rotina, gestão do tempo e priorização inteligente de demandas.'
     },
 ];

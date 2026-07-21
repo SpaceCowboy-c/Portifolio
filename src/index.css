@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
 }
 
-body::-webkit-scrollbar {  /*disabilita a barra de rolagem*/
+/* Regra global para ocultar o scroll*/
+body::-webkit-scrollbar {
     display: none;
 }
