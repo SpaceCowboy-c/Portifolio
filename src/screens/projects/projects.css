@@ -163,35 +163,33 @@
 @media (max-width: 768px) {
     .projects-content {
         margin-left: 0;
-        padding: 90px 24px 60px 24px;
-        text-align: center; /* Centraliza o cabeçalho no celular */
+        padding: 30px 20px;
+        text-align: center;
     }
 
     .projects-title {
-        font-size: 30px; /* Reduz o título principal */
+        font-size: 26px;
         margin-bottom: 16px;
     }
-
-    .projects-description {
-        font-size: 14px;
-        margin-bottom: 40px;
+    .projects-description{
+        font-size: 12px;
+    }
+    .projects-card-description{
+        font-size: 12px;
+        text-align: justify;
     }
 
     .projects-row {
-        flex-direction: column; /* Empilha os cards um embaixo do outro */
-        align-items: center;  /*centraliza elementos*/
+        flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
 
     .projects-card {
-        width: 100%; /* Ocupa a largura disponível da tela */
+        width: 100%;
         max-width: 100%;
         padding: 24px 20px;
         text-align: left;
         box-sizing: border-box;
-    }
-
-    .projects-card-description {
-        font-size: 13px;
     }
 }

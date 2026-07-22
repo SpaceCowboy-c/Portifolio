@@ -3,7 +3,9 @@ import Navbar from '../../components/Navbar/navbar';
 import './home.css';
 import { Link } from 'react-router-dom';
 
-export default function Home() {
+export default function Home({ isMobile }) {
+
+    
     return (
         <div className="home">
             <Navbar />
@@ -21,9 +23,15 @@ export default function Home() {
                         Transformo ideias em aplicações rápidas, funcionais e bem projetadas.
                     </p>
 
-                    <Link to="/contact" className="hero-button">
-                        Fale comigo
-                    </Link>
+                    {isMobile ? (
+                        <a href="#contact" className="hero-button">
+                            Fale comigo
+                        </a>
+                    ) : (
+                        <Link to="/contact" className="hero-button">
+                            Fale comigo
+                        </Link>
+                    )}
                 </div>
 
                 <div className="hero-decoration">

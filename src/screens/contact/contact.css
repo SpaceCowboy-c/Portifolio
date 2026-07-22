@@ -171,4 +171,15 @@
         flex-wrap: wrap;
         /* Garante que os botões quebrem linha se necessário */
     }
+
+    .contact-title{
+        font-size: 26px;
+    }
+
+    .contact-description{
+        font-size: 12px;
+    }
+    .contact-farewell{
+        font-size: 12px;
+    }
 }
