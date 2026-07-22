@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Navbar from "../../components/Navbar/navbar";
+import Navbar from "./components/Navbar/navbar";
 import Home from './screens/home/home.jsx'
 import About from './screens/about/about.jsx'
 import HardSkill from './screens/Skills/hardSkill.jsx'
