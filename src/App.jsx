@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
-
-// Importe sua Navbar (Ajuste o caminho se necessário)
-import Navbar from './components/navbar/navbar.jsx'
-
-// Suas Telas
+import Navbar from "../../components/Navbar/navbar";
 import Home from './screens/home/home.jsx'
 import About from './screens/about/about.jsx'
 import HardSkill from './screens/Skills/hardSkill.jsx'
