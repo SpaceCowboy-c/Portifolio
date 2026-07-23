@@ -225,4 +225,42 @@ ele lê o bloco @media e substitui apenas as propriedades específicas */
         height: 90px;
         filter: blur(30px);
     }
+
+    .scroll-indicator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        position: absolute; /* fixa o indicador no rodapé da viewport, sempre visível */
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3; /* fica acima das bolhas decorativas */
+        animation: bounceDown 2s ease-in-out infinite; /* aplica o movimento de "pulsar para baixo" infinitamente */
+
+        }
+    
+    .scroll-indicator-text { /* Texto pequeno acima da seta */
+        font-size: 10px;
+        font-family: monospace;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #ccc;
+        }
+
+         @keyframes bounceDown {
+    
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+    
+            50% {
+                transform: translateY(10px);
+            }
+        }
+    
+        .scroll-indicator {
+            animation: bounceDown 2s ease-in-out infinite;
+        }
 }

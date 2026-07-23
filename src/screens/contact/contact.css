@@ -176,7 +176,8 @@
         font-size: 26px;
     }
 
-    .contact-description{
+    .contact-description,
+    .contact-subtitle   {
         font-size: 12px;
     }
     .contact-farewell{

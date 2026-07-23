@@ -46,6 +46,7 @@ const frameworks = [
     { title: 'React', level: 'Intermediário', icon: 'devicon-react-original colored' },
     { title: 'React Native', level: 'Intermediário', icon: 'devicon-react-original colored' },
     { title: 'Angular.js', level: 'Básico', icon: 'devicon-angularjs-plain colored' },
+    { title: 'Adianti', level: 'Básico', icon: 'devicon-php-plain colored'},
 ];
 
 const databases = [

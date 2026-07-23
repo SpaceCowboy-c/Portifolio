@@ -40,6 +40,29 @@ export default function Home({ isMobile }) {
                     <div className="bolha bolha-3"></div>
                 </div>
             </main>
+
+{
+        isMobile && (
+            <div className="scroll-indicator" aria-hidden="true">
+                <span className="scroll-indicator-text">role para baixo</span>
+                <svg
+                    className="scroll-indicator-arrow"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                >
+                    <path
+                        d="M6 9l6 6 6-6"
+                        stroke="#7a0a96"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    />
+                </svg>
+            </div>
+            
+                )}
         </div>
     );
 }

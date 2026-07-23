@@ -32,7 +32,6 @@ export default function About() {
                     <div className="about-tags">
                         <span className="about-tag">🎓 Eng. de Software (Univates)</span>
                         <span className="about-tag">💻 Full-Stack Web developer</span>
-                        <span className="about-tag">💻 Especialista em desenvolvimento web/mobile</span>
                     </div>
                 </section>
 

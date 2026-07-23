@@ -192,12 +192,20 @@
     .skill-name {
 
         padding: 16px 10px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
      .skill-level {
         font-size: 9px;
         padding: 3px 8px;
         letter-spacing: 0.5px;
+     }
+
+     .hard-skill-list-title,
+     .category-header {
+        font-size: 12px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
      }
 }
